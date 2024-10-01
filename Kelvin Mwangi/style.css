@@ -1,0 +1,20 @@
+body{
+    height: 99vh;
+    width: 99vw;
+    background-color: ;
+}
+#title h1{
+    font-size: 10dvi;
+}
+#content p{
+    font-size: large;
+}
+#navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: space-around;
+}
+#navigation a{
+    margin: 1%;
+}
