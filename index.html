@@ -1,0 +1,214 @@
+<!--Joelech-->
+<!--HTML-->
+<!--9/10/2024-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation</title>
+    <link rel="stylesheet" href="Quotation & Measures/style.css">
+</head>
+<body>
+    <section id="title">
+        <h1>Quotation</h1>
+    </section>
+
+    <section>
+        <form id="quotation_Form">
+            <!-- Panel section -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Panel(s) table</th>
+                        <td>…</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Length</td>
+                        <td>Width</td>
+                        <td>Quantity</td>
+                        <td>Material</td>
+                        <td>Label</td>
+                        <td><a>≡</a></td>
+                    </tr>
+                    <tr id="panel_Input">
+                        <td><input id="length" name="length" type="number"></td>
+                        <td><input id="width" name="width" type="number"></td>
+                        <td><input id="quantity" name="quantity" type="number"></td>
+                        <td><input id="material" name="material" type="text"></td>
+                        <td><input id="label" name="label" type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="panel_Display"></div>
+
+            <table>
+                <tr>
+                    <td><button type="button" onclick="add_Panel()">Update panel</button></td>
+                    <td><p>Total area measure</p></td>
+                    <td><button type="button" onclick="calculate_Panel()">Calculate</button></td>
+                    <div id="area"></div>
+                </tr>
+            </table>
+
+            <!-- Stock section -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock sheet(s) table</th>
+                        <td>…</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Length</td>
+                        <td>Width</td>
+                        <td>Quantity</td>
+                        <td>Material</td>
+                        <td>Label</td>
+                        <td><a>≡</a></td>
+                    </tr>
+                    <tr id="stock_Input">
+                        <td><input id="stock_length" name="length" type="number"></td>
+                        <td><input id="stock_width" name="width" type="number"></td>
+                        <td><input id="stock_quantity" name="quantity" type="number"></td>
+                        <td><input id="stock_material" name="material" type="text"></td>
+                        <td><input id="stock_label" name="label" type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="panel_Stock"></div>
+
+            <table>
+                <tr>
+                    <td><button type="button" onclick="add_Stock()">Update stock</button></td>
+                    <td><p>Total stock area measure</p></td>
+                    <td><button type="button" onclick="calculate_Stock()">Calculate</button></td>
+                    <div id="stock_area"></div>
+                </tr>
+            <!-- Option section -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Options</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cut/ blade/ kerf thickness</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Labels on panels</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Only sheet(s) from stock table</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Consider material</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Edge Banding</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Consider grain direction</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Calculation section -->
+            <tr>
+                <td><button type="button">Calculate information</button></td>
+            </tr>
+            </table>
+        </form>
+        <hr>
+        <!-- Settings section -->
+        <h2>Settings</h2>
+        <ul>
+            <li>
+                <p>Language</p>
+                <input type="text" placeholder="Enter language">
+            </li>
+            <li>
+                <p>Optimization priority</p>
+                <select>
+                    <option value="speed">Speed</option>
+                    <option value="accuracy">Accuracy</option>
+                    <option value="balance">Balance</option>
+                </select>
+            </li>
+            <li>
+                <p>Cut orientation</p>
+                <select>
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
+                    <option value="diagonal">Diagonal</option>
+                </select>
+            </li>
+            <li>
+                <p>Units</p>
+                <select>
+                    <option value="metric">Metric</option>
+                    <option value="imperial">Imperial</option>
+                </select>
+            </li>
+            <li>
+                <p>Dimensions order</p>
+                <input type="text" placeholder="e.g., Width, Height">
+            </li>
+            <li>
+                <p>Number type</p>
+                <select>
+                    <option value="integer">Integer</option>
+                    <option value="decimal">Decimal</option>
+                </select>
+            </li>
+            <li>
+                <p>Minimum dimension trim</p>
+                <input type="number" placeholder="Enter minimum trim" step="0.1">
+            </li>
+            <li>
+                <p>Stack panels with same cut layout</p>
+                <input type="checkbox">
+            </li>
+            <li>
+                <p>Run calculation on client</p>
+                <input type="checkbox">
+            </li>
+        </ul>
+        <hr>
+        <button onclick="updateSettings()">Update</button>
+
+        <nav>
+            <h2>≡ Options</h2>
+            <ul>
+                <li><a href="#sign-in">Sign in</a></li>
+                <li><a href="#blank-project">Blank project</a></li>
+                <li><a href="#save-project">Save project</a></li>
+                <li><a href="#load-project">Load project</a></li>
+                <li><a href="#export-pdf">Export to PDF</a></li>
+                <li><a href="#export-image">Export to Image</a></li>
+                <li><a href="#premium-version">Premium version</a></li>
+                <li><a href="#feedback">Question or Feedback</a></li>
+                <li><a href="#get-software">Get Software</a></li>
+                <li><a href="#about">About
+            </ul>
+        </nav>        
+    </section>
+    <section id="navigation">
+        <a rel="Premier Glass" href="Premier glass.html">Premier Glass</a>
+    </section>
+    <script src="Quotation & Measures/script.js" rel="JavaScript"></script>
+</body>
+</html>
