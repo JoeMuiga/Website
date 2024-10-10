@@ -100,3 +100,41 @@ function calculate_Stock() {
 function updateSettings() {
     alert('Settings updated!');
 }
+// Function to calculate the remaining stock area
+function calculateInformation() {
+    // Get the total area of panels
+    const totalArea = document.querySelector('#area').innerText.match(/Total Area: (\d+\.?\d*)/);
+    const totalPanelArea = totalArea ? parseFloat(totalArea[1]) : 0;
+
+    // Get the total area of stock sheets
+    const totalStockArea = document.querySelector('#stock_area').innerText.match(/Total Stock Area: (\d+\.?\d*)/);
+    const totalStock = totalStockArea ? parseFloat(totalStockArea[1]) : 0;
+
+    // Subtract panel area from stock area
+    const remainingArea = totalStock - totalPanelArea;
+
+    // Display the remaining area
+    document.getElementById('remaining_area').innerText = `Remaining Stock Area: ${remainingArea.toFixed(2)} square units`;
+
+    // Prompt the user for an email address and send the result
+    const userEmail = prompt("Enter your email to receive the calculated results:");
+
+    // Send email to the user and default email
+    sendEmail(userEmail, remainingArea);
+}
+
+// Function to simulate email sending
+function sendEmail(userEmail, remainingArea) {
+    // Here you would integrate an email service API (e.g., SendGrid, EmailJS) to send the email.
+    // For now, we'll just simulate an email send action with an alert.
+    
+    const emailBody = `The remaining stock area after cutting is ${remainingArea.toFixed(2)} square units.`;
+
+    alert(`Results sent to ${userEmail} and joemuiga02@gmail.com`);
+
+    // Simulated email sending
+    console.log(`Email to: ${userEmail}`);
+    console.log(`Email to: joemuiga02@gmail.com`);
+    console.log(`Message: ${emailBody}`);
+}
+
