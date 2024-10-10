@@ -82,6 +82,7 @@
             </table>
 
             <div id="panel_Stock"></div>
+            
 
             <table>
                 <tr>
@@ -90,6 +91,14 @@
                     <td><button type="button" onclick="calculate_Stock()">Calculate</button></td>
                     <div id="stock_area"></div>
                 </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><button type="button" onclick="calculateInformation()">Calculate information</button></td>
+                    <td><p>Remaining stock area after cutting:</p></td>
+                    <div id="remaining_area"></div>
+                </tr>
+            </table>
             <!-- Option section -->
             <table>
                 <thead>
@@ -127,9 +136,10 @@
             </table>
 
             <!-- Calculation section -->
-            <tr>
-                <td><button type="button">Calculate information</button></td>
-            </tr>
+            <table>
+                <tr>
+                    <td><button type="button">Calculate information</button></td>
+                </tr>
             </table>
         </form>
         <hr>
