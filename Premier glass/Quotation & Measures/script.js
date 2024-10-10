@@ -43,7 +43,7 @@ function calculate_Panel() {
     panels.forEach(panel => {
         const length = parseFloat(panel.innerHTML.match(/Length: (\d+\.?\d*)/)[1]);
         const width = parseFloat(panel.innerHTML.match(/Width: (\d+\.?\d*)/)[1]);
-        totalArea += length * width;
+        totalArea += length * width * quantity;
     });
 
     document.getElementById('area').innerText = `Total Area: ${totalArea.toFixed(2)} square units`;
@@ -90,7 +90,7 @@ function calculate_Stock() {
     stockSheets.forEach(stock => {
         const length = parseFloat(stock.innerHTML.match(/Length: (\d+\.?\d*)/)[1]);
         const width = parseFloat(stock.innerHTML.match(/Width: (\d+\.?\d*)/)[1]);
-        totalStockArea += length * width;
+        totalStockArea += length * width * quantity;
     });
 
     document.getElementById('stock_area').innerText = `Total Stock Area: ${totalStockArea.toFixed(2)} square units`;
