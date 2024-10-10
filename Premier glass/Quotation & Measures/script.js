@@ -125,16 +125,26 @@ function calculateInformation() {
 
 // Function to simulate email sending
 function sendEmail(userEmail, remainingArea) {
-    // Here you would integrate an email service API (e.g., SendGrid, EmailJS) to send the email.
-    // For now, we'll just simulate an email send action with an alert.
-    
-    const emailBody = `The remaining stock area after cutting is ${remainingArea.toFixed(2)} square units.`;
+    // Create a formatted email body
+    const emailBody = `
+        Dear Customer,
 
+        Thank you for using our quotation tool.
+
+        Here is the result of your calculation:
+        - Total remaining stock area after cutting: ${remainingArea.toFixed(2)} square units.
+
+        We appreciate your business and look forward to serving you again.
+
+        Best regards,
+        Premier Glass Team
+    `;
+
+    // Simulate email sending action (you would replace this with an actual email API integration)
     alert(`Results sent to ${userEmail} and joemuiga02@gmail.com`);
 
-    // Simulated email sending
+    // Log the email content to the console
     console.log(`Email to: ${userEmail}`);
     console.log(`Email to: joemuiga02@gmail.com`);
     console.log(`Message: ${emailBody}`);
 }
-
