@@ -1,0 +1,44 @@
+body{
+    height: 99vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+#page{
+    height: 80vi;
+    width: 80dvi;
+    background-color: pink;
+    margin-top: 12.5%;
+    color: black;
+}
+#title h1{
+    font-size: 10dvi;
+    margin-left: 5%;
+}
+#content p{
+    font-size: 3vi;
+    margin-left: 5%;
+}
+#navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: space-around;
+    margin-left: 5%;
+    font-size: 2vi;
+}
+#navigation a{
+    margin: 2%;
+    background-color: white;
+    color: black;
+}
+#navigation a:hover{
+    margin: 2%;
+    background-color: black;
+    color: white;
+}
