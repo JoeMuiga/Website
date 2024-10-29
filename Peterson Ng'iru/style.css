@@ -1,0 +1,152 @@
+body{
+    width: 99vw;
+    color: darkred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+#page{
+    width: 80dvi;
+    margin-top: 12.5%;
+    box-shadow: 10%;
+    background-color: lightgreen;
+}
+#title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 0;
+}
+#title h1{
+    font-size: 8dvi;
+}
+#content p{
+    font-size: 3dvi;
+}
+#navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+#navigation a{
+    margin: 1%;
+    color: lightblue;
+    background-color: black;
+    border: 1px solid darkred;
+}
+#navigation a:hover{
+    margin: 1%;
+    color: lightgreen;
+    background-color: darkred;
+    border: 1px solid lightblue;
+    scale: 1.05;
+}
+img{
+    height: 30dvi;
+    width: 30dvi;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    background-color: white;
+
+}
+#Advertisement{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 5vw;
+}
+#Advertisement a{
+    height: 30dvi;
+    width: 30dvi;
+}
+marquee{
+    height: 30dvi;
+    width: 30dvi;
+}
+marquee{
+    border: 2px solid lightblue;
+    padding: 1%;
+}
+#marquee img{
+    height: 5vh;
+    width: 5vw;
+}
+.toggle-btn {
+    padding: 1%;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    backdrop-filter: blur(5%);
+}
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 0%;
+    display: none; /* Hidden by default */
+}
+.marquee-content {
+    display: inline-block;
+    margin-top: 0%;
+}
+/* Keyframe for continuous scrolling animation */
+@keyframes continuousScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Continuous scrolling */
+.marquee-active .marquee-content {
+    animation: continuousScroll 45s linear infinite;
+}
+.marquee-content a {
+    margin: 0 1%;
+    color: #333;
+    text-decoration: none;
+}
+.marquee-content a:hover {
+    color: #007bff;
+}
+/* General Styling */
+
+#Joelech_Image{
+    height: 25vh;
+    width: 25vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+#Joelech_Image img{
+    height: 20vh;
+    width: 20vw;
+    background-color: white;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+    gap: 2%;
+}
