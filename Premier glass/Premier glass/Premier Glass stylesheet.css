@@ -1,0 +1,167 @@
+body{
+    width: 99vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#page{
+    width: 80dvi;
+    height: fit-content;
+    background-color: white;
+    margin-top: 12.5%;
+    box-shadow: 10%;
+}
+#page #page_1 h1{font-size: 5vw; font-weight: 600; margin: 1%; color: darkblue; margin-top: 12.5%;}
+#page #page_1 h3{height: 1vw; }
+#page #page_1 #comment{font-size:3vw; margin:3%;}
+#page #page_1 span{color: darkblue;}
+#page #page_1 div{color: #000; text-decoration: none;  border-radius: 1%;  gap: 5%;}
+#page #page_1 #product_Division ,#description:hover{font-family: 'canabas','arial','ubuntu','microsoft-light weight'; border: solid 2px purple; color: orange;}
+#page #page_1 #products{font-size: 3vw; margin:5%; color: darkblue;}
+#page #page_1 .production{margin: 1%; display: flex; flex-direction: column; row-gap: 5%; justify-content: center; align-content:center;}
+#page #page_1 #navigation{display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; align-content: space-around; justify-content: space-around; margin: 10%; grid-gap: 1vw;}
+#page #page_1 h3{margin: 5%; padding:10%;}
+#page #page_1 div{display: flex;  justify-content: center; padding: 1vw; align-items: center;}
+#page #page_2 h1{font-size: 3vw; font-weight: 600; margin: 5%;color: darkblue;}
+#page #page_2 h2{font-size: 4vw; font-weight: 400; color: #000}
+#page #page_2 a{color: #000; }
+#page #page_2 a:hover{color: orange; }
+#page #page_2 #layer{display: grid; grid-template-columns: 1fr 2fr; grid-gap: 3%; margin-top: 10%; margin-bottom: 5%;}
+#page #page_2 #layer_1{margin: 5%; justify-content: center; align-content:center;}
+#page #page_2 #layer_2{margin: 5%;}
+#page #page_2 #layer_2 #products{ height: max; width: max; overflow: hidden;}
+#page #page_2 #layer_2 .production > h3{ margin: 5%; border: solid black 1px; padding: 15%;}
+#page #page_2 #Implementation{display:grid; grid-template-columns: 2fr 1fr; grid-gap: 3%; margin-top: 10%; margin-bottom: 5%;}
+#page #page_2 #sech2{font-size: 4vw; font-weight: 600; justify-content: center; align-content:center;margin-right:5%;margin-left:10%;}
+#page #page_2 .layer_2{justify-content: center; align-content:center;}
+#page #page_2 #navigation{display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; align-content: center; justify-content: center; margin: 10%; grid-gap: 1vw;}
+#page #page_3 h1{font-size: 6vw; font-weight: 600; margin: 5%; color: darkblue;}
+#page #page_3 h2{font-size: 4vw; font-weight: 400; }
+#page #page_3 a{color: #000; }
+#page #page_3 a:hover{color: orange; }
+#page #page_3 #navigation{display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; align-content: center; justify-content: center; margin: 10%; grid-gap: 1vw;}
+#page #page_4 h1{font-size: 6vw; font-weight: 600; margin: 5%;}
+#page #page_4 h2{font-size: 4vw; font-weight: 400;}
+#page #page_4 a{color: green; }
+#page #page_5 h1{font-size: 6vw; font-weight: 600; margin: 5%; color: darkblue;}
+#page #page_5 h2{font-size: 4vw; font-weight: 400; }
+#page #page_5 a{color: green; }
+#page #page_5 a:hover{color: orange; }
+#page #page_5 #navigation{display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; align-content: center; justify-content: center; margin: 5%; grid-gap: 1vw;}
+#page #page_5 #navigation div{display: flex; justify-content: center; padding: 3vw; align-items: center;}
+button{width: 100%; }
+#Scroll_up{display: flex; border:  solid black 1px; justify-content: center; align-content: center;}
+#Scroll_down{display: flex; border: solid black 1px; justify-content: center; align-content: center;}
+a{display: flex; flex-direction: row; justify-content: center; align-content: center; color: green; font-style: oblique; text-decoration: none;}
+a:hover{display: flex; flex-direction: row; justify-content: center; align-content: center; color: orange; scale: 1.05;}
+.picture_title{height: 30%; width: 30%; margin: 5%;}
+.title{display: flex; flex-direction: row; align-content: space-around; justify-content: space-around; }
+img{height: 25vh; width: 15vw;}
+#quotation_and_Measures{
+    color: darkblue;
+    font-size: 3dvi;
+}
+#quotation_and_Measures a{
+    background-color: purple;
+    font-size: 5dvi;
+    color: white;
+    border-radius: 50%;
+}
+#quotation_and_Measures a:hover{
+    color: orange;
+    scale: 1.05;
+}
+#contact{
+    position: fixed;
+    bottom: 10vh;
+    right: 0;
+    z-index: 1000;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 1%;
+    border: 1px solid black;
+}
+#contact:hover{
+    scale: 1.05;
+}
+marquee{
+    width: 79%
+    height: 45vh;
+    padding: 1%;
+    gap: 5%;
+}
+marquee img{
+    width: 45vw;
+    height: 45vh;
+}
+#marquee{
+    position: fixed;
+    bottom: -15vh;
+    z-index: 1000;
+}
+.marquee-content img{
+    height: 10vh;
+    width: 10vw;
+}
+#communication{
+    width: 15vw;
+    position: fixed;
+    bottom: 1vh;
+    right: 0;
+    z-index: 1000;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 1%;
+    border: 1px solid black;
+}
+#communication:hover{
+    scale: 1.05;
+}
+#Internet a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#Internet img{
+    height: 10vh;
+    width: 10vw;
+}
+#list{
+    display: none;
+}
+#list_1{
+    display: none;
+}
+#list_2{
+    display: none;
+}
+#list_3{
+    display: none;
+}
+#list_4{
+    display: none;
+}
+#list_5{
+    display: none;
+}
+#list_6{
+    display: none;
+}
+#list_7{
+    display: none;
+}
+#list_8{
+    display: none;
+}
