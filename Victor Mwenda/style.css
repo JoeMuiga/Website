@@ -1,5 +1,4 @@
 body{
-    height: 99vh;
     width: 99vw;
     display: flex;
     justify-content: center;
@@ -10,7 +9,6 @@ body{
     padding: 0;
 }
 #page{
-    height: 80vi;
     width: 80dvi;
     background-color: black;
     margin-top: 12.5%;
