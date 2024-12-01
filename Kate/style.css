@@ -1,0 +1,138 @@
+body{
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+#page{
+    width: 80dvi;
+    background-color: gold;
+    margin-top: 12.5%;
+    color: black;
+    box-shadow: 10%;
+    font-style: oblique;
+}
+#title h1{
+    font-size: 10dvi;
+    margin-left: 5%;
+}
+#content p{
+    font-size: large;
+    margin-left: 5%;
+}
+#navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: space-around;
+    margin-left: 5%;
+}
+#navigation a{
+    margin: 1%;
+    background-color: white;
+}
+#navigation a:hover{
+    margin: 1%;
+    background-color: black;
+    color: white;
+}
+.toggle-btn {
+    padding: 1%;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    backdrop-filter: blur(5%);
+}
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 0%;
+    display: none; /* Hidden by default */
+}
+.marquee-content {
+    display: inline-block;
+    margin-top: 0%;
+}
+/* Keyframe for continuous scrolling animation */
+@keyframes continuousScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Continuous scrolling */
+.marquee-active .marquee-content {
+    animation: continuousScroll 45s linear infinite;
+}
+.marquee-content a {
+    margin: 0 1%;
+    color: #333;
+    text-decoration: none;
+}
+.marquee-content a:hover {
+    color: #007bff;
+}
+/* General Styling */
+
+#Joelech_Image{
+    height: 25vh;
+    width: 25vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+#Joelech_Image img{
+    height: 20vh;
+    width: 20vw;
+    background-color: white;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+    gap: 2%;
+}
+header {
+    margin-top: 20px;
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.payment-logo {
+    height: 5vh;
+    width: 5vw;
+    transition: transform 0.3s ease;
+}
+
+.payment-logo:hover {
+    transform: scale(1.1);
+    height: 5vh;
+    width: 5vw;
+}
+img{
+    height: 5vh;
+    width: 5vw;
+}
